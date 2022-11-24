@@ -4,8 +4,11 @@ import {Link} from "react-router-dom"
 
 const Header = () => {
     return ( 
-        <header>
-            <h1>AEKI</h1>
+        <header className="bg-sky-900 text-white">
+            <Link to="/">
+                <h1>AEKI</h1>
+            </Link>
+
             <ul className="nav-links">
                 <Link to="/">
                     <li>Homepage</li>
@@ -14,7 +17,7 @@ const Header = () => {
                     <li>Products</li>
                 </Link>
                 <Link to="/about">
-                    <li>about</li>
+                    <li>About</li>
                 </Link>
 
             </ul>

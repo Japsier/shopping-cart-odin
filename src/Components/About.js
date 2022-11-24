@@ -2,7 +2,7 @@ import Header from "./Header";
 
 const About = () => {
     return ( 
-        <div>
+        <div className="main">
             <Header />
             <h1>About</h1>
         </div>
