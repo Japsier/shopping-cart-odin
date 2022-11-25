@@ -1,6 +1,6 @@
 import Header from "./Header";
 import {Link} from "react-router-dom"
-import homepageImg from "../Assets/homepage.jpg"
+import homepage from "../Assets/homepage.jpg"
 
 const Homepage = () => {
     return ( 
@@ -9,7 +9,7 @@ const Homepage = () => {
             <div className="homepage w-full  text-white  font-bold flex flex-col">
                 <div className="flex h-80 bg-neutral-900 w-full">
                     <div className="w-2/4 flex">
-                        <img src={homepageImg} alt="cozy home" className="max-w-md w-4/5 h-4/5  m-auto mr-0"/>
+                        <img src={homepage} alt="cozy home" className="max-w-md w-4/5 h-4/5  m-auto mr-0"/>
                     </div>
                     
                     <div className="60vw pl-10 mr-auto mb-auto mt-auto flex flex-col gap-4">

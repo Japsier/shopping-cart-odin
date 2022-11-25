@@ -37,3 +37,28 @@ ul {
     display: flex;
     gap: 3rem;
 }
+.productDisplay {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f3f4f6;
+    width: 100%;
+
+}
+.item:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.item {
+    transition: all .2s ease-in-out;
+    border: 1px solid #cbd5e1;
+}
+@media (min-width: 1200px) {
+    .productDisplay {grid-template-columns: repeat(3, 1fr);}
+}
+@media (min-width: 1600px) {
+    .productDisplay {grid-template-columns: repeat(4, 1fr);}
+}
+
