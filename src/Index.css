@@ -40,7 +40,7 @@ ul {
 .productDisplay {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
     background-color: #f3f4f6;
@@ -55,10 +55,30 @@ ul {
     transition: all .2s ease-in-out;
     border: 1px solid #cbd5e1;
 }
+@media (min-width: 900px) {
+    .productDisplay {grid-template-columns: repeat(2, 1fr);}
+}
 @media (min-width: 1200px) {
     .productDisplay {grid-template-columns: repeat(3, 1fr);}
 }
 @media (min-width: 1600px) {
     .productDisplay {grid-template-columns: repeat(4, 1fr);}
+}
+.cartIconDiv {
+    position: relative;
+}
+.cartCounter {
+    display: flex;
+    position: absolute;
+    bottom: -5px;
+    background-color: #ea580c;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    
 }
 

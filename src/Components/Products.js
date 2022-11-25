@@ -24,6 +24,7 @@ const Products = () => {
 
         return {name, price, img, id}
     }
+    const [cartCounter, setCartCounter] = useState(0)
     const [products, setProducts] = useState([
         createProduct("Bank", bank, "$140"),
         createProduct("Balloon Lamp", balloonLamp, "$23"),
@@ -37,14 +38,25 @@ const Products = () => {
         createProduct("Lamp", lamp, "$45"),
         
     ])
+    const onButtonClick = () => {
+        console.log("item clicked")
+        setCartCounter(cartCounter + 1)
+    }
 
 
     return ( 
-        <div className="main bg-gray-100">
-            <Header />
+        <div className="main">
+            <Header counter={cartCounter}/>
             <div className="productDisplay">
                 {products.map((element) => {
-                    return <Item img={element.img} name={element.name} price={element.price} id={element.id}/>
+                    return <Item 
+                            img={element.img} 
+                            name={element.name} 
+                            price={element.price} 
+                            id={element.id}
+                            onClickFunc={onButtonClick}
+                            />
+                            
                 })}
             </div>
 
