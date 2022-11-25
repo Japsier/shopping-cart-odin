@@ -6,7 +6,6 @@ import twitter from "../Assets/Downloads/twitter.png"
 const About = () => {
     return ( 
         <div className="main">
-            <Header />
             <div className="w-full h-full p-4 px-40 flex flex-col gap-10">
                 <h1 className="text-3xl text-center font-semibold">About Us</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.

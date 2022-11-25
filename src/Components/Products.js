@@ -12,10 +12,11 @@ import cup from "../Assets/cup.avif"
 import curtains from "../Assets/curtains.avif"
 import desk from "../Assets/desk.avif"
 import lamp from "../Assets/lamp.avif"
+import PreviousMap from "postcss/lib/previous-map";
 
 //import
 
-const Products = () => {
+const Products = (props) => {
     const createProduct = (prodName, prodImg, prodPrice) => {
         let name = prodName
         let img = prodImg
@@ -38,15 +39,10 @@ const Products = () => {
         createProduct("Lamp", lamp, "$45"),
         
     ])
-    const onButtonClick = () => {
-        console.log("item clicked")
-        setCartCounter(cartCounter + 1)
-    }
 
 
     return ( 
         <div className="main">
-            <Header counter={cartCounter}/>
             <div className="productDisplay">
                 {products.map((element) => {
                     return <Item 
@@ -54,7 +50,7 @@ const Products = () => {
                             name={element.name} 
                             price={element.price} 
                             id={element.id}
-                            onClickFunc={onButtonClick}
+                            onClickFunc={props.update}
                             />
                             
                 })}

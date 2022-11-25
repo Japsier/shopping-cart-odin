@@ -5,7 +5,6 @@ import homepage from "../Assets/homepage.jpg"
 const Homepage = () => {
     return ( 
         <div className="main  ">
-            <Header />
             <div className="homepage w-full  text-white  font-bold flex flex-col">
                 <div className="flex h-80 bg-neutral-900 w-full">
                     <div className="w-2/4 flex">
