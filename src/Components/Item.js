@@ -1,7 +1,6 @@
 
 const Item = (props) => {
 
-
     return(
          <div key ={props.id} onClick={props.onClickFunc} className=" item flex flex-col gap-5 p-10 bg-blue-100">
             <h2 className="text-2xl font-md">{props.name}</h2>

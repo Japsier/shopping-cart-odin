@@ -60,13 +60,13 @@ ul {
 .item {
     border: 1px solid #cbd5e1;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     .productDisplay {grid-template-columns: repeat(2, 1fr);}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .productDisplay {grid-template-columns: repeat(3, 1fr);}
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
     .productDisplay {grid-template-columns: repeat(4, 1fr);}
 }
 .cartIconDiv {

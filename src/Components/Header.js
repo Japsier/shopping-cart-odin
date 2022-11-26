@@ -10,7 +10,7 @@ const Header = (props) => {
         if (props.counter !== undefined) {
             setCounter(props.counter)
         }
-        //document.getElementById("homepageLi").style.color = "#fde047"
+        
 
     })
 
