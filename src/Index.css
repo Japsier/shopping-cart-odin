@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    height: 100%;
+}
+
 body {
     min-height: 100vh;
 }
 .root {
-    height: 100vh;
     background-size: cover;
 }
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100%;
 }
 header {
@@ -26,6 +28,8 @@ header {
     padding-left: 3rem;
     padding-right: 3rem;
     font-size: 18px;
+    position: sticky;
+    top: 0;
 }
 .homepage {
 
@@ -49,10 +53,9 @@ ul {
 }
 .item:hover {
     cursor: pointer;
-    transform: scale(1.02);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .item {
-    transition: all .2s ease-in-out;
     border: 1px solid #cbd5e1;
 }
 @media (min-width: 900px) {

@@ -25,7 +25,6 @@ const Products = (props) => {
 
         return {name, price, img, id}
     }
-    const [cartCounter, setCartCounter] = useState(0)
     const [products, setProducts] = useState([
         createProduct("Bank", bank, "$140"),
         createProduct("Balloon Lamp", balloonLamp, "$23"),
@@ -42,8 +41,8 @@ const Products = (props) => {
 
 
     return ( 
-        <div className="main">
-            <div className="productDisplay">
+        <div className="main h-full">
+            <div className="productDisplay h-full">
                 {products.map((element) => {
                     return <Item 
                             img={element.img} 
