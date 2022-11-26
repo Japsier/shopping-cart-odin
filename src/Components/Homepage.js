@@ -3,6 +3,10 @@ import {Link} from "react-router-dom"
 import homepage from "../Assets/homepage.jpg"
 
 const Homepage = () => {
+    const shopButtonClick = () => {
+        document.getElementById("homepageLi").style.color = "white"
+        document.getElementById("productsLi").style.color = "#fde047"
+    }
     return ( 
         <div className="main  ">
             <div className="homepage w-full  text-white  font-bold flex flex-col">
@@ -14,7 +18,7 @@ const Homepage = () => {
                     <div className="60vw pl-10 mr-auto mb-auto mt-auto flex flex-col gap-4">
                         <h1 className="text-5xl max-w-lg">Being creative at home has never been so simple & fun!</h1>
                         <Link to="/products">
-                            <button className="bg-blue-800 hover:bg-blue-900 text-white font-bold p-4 px-4 rounded">Shop now!</button>
+                            <button className="bg-blue-800 hover:bg-blue-900 text-white font-bold p-4 px-4 rounded" onClick={shopButtonClick}>Shop now!</button>
                         </Link>
                     </div>
 

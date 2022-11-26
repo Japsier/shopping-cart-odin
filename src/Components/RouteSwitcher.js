@@ -10,6 +10,7 @@ const RouteSwitcher= () => {
 
     const updateCounter = () => {
       setCounter(counter + 1)
+      console.log(counter)
     }
 
     return ( 

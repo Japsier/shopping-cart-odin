@@ -39,6 +39,8 @@ const Products = (props) => {
         
     ])
 
+    
+
 
     return ( 
         <div className="main h-full">

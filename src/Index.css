@@ -36,6 +36,8 @@ header {
 }
 header h1 {
     font-size: 2.2rem;
+    color: #fde047;
+    font-weight: 600;
 }
 ul {
     display: flex;
